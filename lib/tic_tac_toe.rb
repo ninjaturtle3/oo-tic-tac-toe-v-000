@@ -70,6 +70,6 @@ class TicTacToe
   WIN_COMBINATIONS.find do |win_combination|
     position_taken?(win_combination[1]) && @board[win_combination[0]] == @board[win_combination[1]] && @board[win_combination[0]] == @board[win_combination[2]]
   end
-end
+  end
 
 end
