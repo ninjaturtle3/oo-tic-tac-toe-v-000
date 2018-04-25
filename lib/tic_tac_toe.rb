@@ -85,3 +85,12 @@ class TicTacToe
   def over?
   won?(@board) || draw?(@board)
   end
+
+  def winner
+  if won?(@board) != nil
+    winner = board[won?(board)[0]]
+  end
+end
+
+
+end  
