@@ -72,4 +72,11 @@ class TicTacToe
   end
   end
 
+  def full?
+  @board.none? do |index|
+    index == " " ||index.nil?
+  end
+  end
+
+
 end
