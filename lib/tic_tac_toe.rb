@@ -83,5 +83,5 @@ class TicTacToe
   end
 
   def over?
-  won?(@board) || draw?(@board) 
-end
+  won?(@board) || draw?(@board)
+  end
