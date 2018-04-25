@@ -79,18 +79,18 @@ class TicTacToe
   end
 
   def draw?
-  !won?(@board) && full?(@board)
+  !won? && full?
   end
 
   def over?
-  won?(@board) || draw?(@board)
+  won? || draw?
   end
 
   def winner
-  if won?(@board) != nil
-    winner = board[won?(board)[0]]
+    if won? != nil
+      winner = [won?(@board)[0]]
+    end
   end
+
+
 end
-
-
-end  
